@@ -47,6 +47,12 @@ header{
     display: block;
     padding: 10px 20px;
 }
+.menu a:hover{
+    color : white;
+    /* #FF6347; */
+    font-size: 120%;
+    background-color:#FF00FF;
+}
 .menu ul{
     display: flex;
     justify-content:space-around;
@@ -62,11 +68,7 @@ a{
 a:link, a:visited, a:active {
 	text-decoration:none;
 }
-a:hover{
-    color : #FF6347; 
-    font-size: 150%;
-    background:none;
-}
+
 .site-title, .site-subtitle{
     text-align: center;
     color: #DA70D6;
@@ -123,6 +125,7 @@ a:hover{
 }
 .contato a:hover{
     text-decoration: none;
+    text-shadow: 0px 0px 10px rgb(216, 136, 189);
 }
 .contato .icons{
     text-align: center;
