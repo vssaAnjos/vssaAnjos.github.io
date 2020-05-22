@@ -7,11 +7,10 @@
 body{
   /*  background-color: #464343; */
     background-image: url('../img/Canva-blue.jpg');
-    font-family: Arial, Helvetica, sans-serif;
     background-size: auto 100vh; 
-    font-family: Arial;
     height: 100vh;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
 }
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
@@ -71,14 +70,48 @@ a:hover{
 .site-title, .site-subtitle{
     text-align: center;
     color: #DA70D6;
+    font-family: 'Merienda', cursive;
 }
 .site-subtitle{
     font-style: italic;
 }
 .site-title {
     font-size: 4em;
-  }
+
+}
+.portifolio h2{
+    font-family: 'Merienda', cursive;    
+    margin-bottom: 2em;
+}
 .img-portfolio{
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
+}
+.portifolio{
+    color: #DA70D6;
+    padding: 2em;
+}
+.portifolio .grid {
+    display: grid;
+    gap: 1em;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+@media (min-width: 560px) {
+    .portifolio .grid {
+        grid-template-columns: 250px 250px;
+    }
+}
+/*
+@media (min-width: 880px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 200px);
+      align-content: center;
+      justify-content: space-around;
+      height: calc(100vh - 8em - 48px);
+    }
+  } */
+.portifolio figure{
+    text-align: center;
 }
