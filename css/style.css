@@ -43,6 +43,7 @@ header{
     position: fixed;    
     width: 100vw;
     top: 0px;
+    z-index: 1;
 }
 .menu a {
     display: block;
@@ -74,7 +75,16 @@ a:link, a:visited, a:active {
 .titulos {
     transform: scale(0.2) translateY(50vh);
     opacity: 0;
-    animation: ;
+    animation: linear 2s animacaoTitulos forwards;
+}
+@keyframes animacaoTitulos{
+    from{
+
+    }
+    to{
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
 }
 .site-title, .site-subtitle{
     text-align: center;
@@ -89,23 +99,23 @@ a:link, a:visited, a:active {
 
 }
 .contato,
-.portifolio{
+.portfolio{
     color: #DA70D6;
     padding: 2em;
     min-height: 100vh;
 }
 .contato h2,
-.portifolio h2{
+.portfolio h2{
     font-family: 'Merienda', cursive;    
     margin-bottom: 1.5em;
     font-size: 2em;
 }
-.portifolio .grid {
+.portfolio .grid {
     display: grid;
     gap: 2em;
 }
 @media (min-width: 560px) {
-    .portifolio .grid {
+    .portfolio .grid {
         grid-template-columns: 240px 240px;
     }
 }
@@ -115,7 +125,6 @@ a:link, a:visited, a:active {
         align-content: center;
         justify-content: center;
         height: calc(100vh - 8em - 40px);
-        background-color: #FF6347;
     }
   }
   @media(min-width: 1200px){
@@ -125,7 +134,7 @@ a:link, a:visited, a:active {
         justify-content: center;               
     }    
 }
-.portifolio figure{
+.portfolio figure{
     text-align: center;
 }
 .img-portfolio{
@@ -152,3 +161,18 @@ a:link, a:visited, a:active {
 .contato .icons{
     text-align: center;
 }
+.scrollToTop {
+    padding: 4px 8px;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    display: block;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    font-size: 0.8em;
+  }
+  
+  .scrollToTop:hover,
+  .scrollToTop:active {
+    opacity: 0.8;
+  }
