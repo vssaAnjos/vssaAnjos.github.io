@@ -12,6 +12,7 @@ body{
     background-size: cover; 
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
@@ -98,17 +99,38 @@ a:link, a:visited, a:active {
     font-size: 4em;
 
 }
-.contato,
-.portfolio{
-    color: #DA70D6;
-    padding: 2em;
+.sobre,
+.portfolio,
+.contato{
+    padding: 3em;
     min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;  
 }
+@media(min-width: 1200px){
+    .sobre
+    .contato{
+    max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+}
+.sobre h2,
 .contato h2,
 .portfolio h2{
+    color: #DA70D6;
     font-family: 'Merienda', cursive;    
     margin-bottom: 1.5em;
     font-size: 2em;
+}
+
+.sobre p{
+    margin-bottom: 1.1em;
+    text-indent: 1.5em;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto; 
+
 }
 .portfolio .grid {
     display: grid;
@@ -176,4 +198,3 @@ a:link, a:visited, a:active {
   .scrollToTop:active {
     opacity: 0.8;
   }
-  
